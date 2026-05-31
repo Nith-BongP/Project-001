@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -14,28 +15,59 @@
             <Image url="@calculator-background.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="14.0" layoutY="14.0" text="Mini Project">
+      <Label layoutX="14.0" layoutY="28.0" text="Mini Project" textFill="WHITE">
          <font>
             <Font name=".VnBahamasB Bold" size="36.0" />
          </font>
       </Label>
-      <TextField alignment="CENTER" layoutX="23.0" layoutY="154.0" prefHeight="31.0" prefWidth="53.0" promptText="A" />
-      <TextField alignment="CENTER" layoutX="128.0" layoutY="154.0" prefHeight="31.0" prefWidth="53.0" promptText="B" />
-      <TextField alignment="CENTER" layoutX="226.0" layoutY="154.0" prefHeight="31.0" prefWidth="53.0" promptText="C" />
-      <Label layoutX="79.0" layoutY="161.0" text="X^2  +">
+      <TextField alignment="CENTER" layoutX="29.0" layoutY="137.0" prefHeight="31.0" prefWidth="53.0" promptText="A">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" layoutX="134.0" layoutY="137.0" prefHeight="31.0" prefWidth="53.0" promptText="B">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" layoutX="232.0" layoutY="137.0" prefHeight="31.0" prefWidth="53.0" promptText="C" />
+      <Label layoutX="85.0" layoutY="144.0" text="X^2  +">
          <font>
             <Font name=".VnAvant Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="185.0" layoutY="161.0" text="X    +">
+      <Label layoutX="191.0" layoutY="144.0" text="X    +">
          <font>
             <Font name=".VnAvant Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="283.0" layoutY="161.0" text=" =     0">
+      <Label layoutX="289.0" layoutY="144.0" text=" =     0">
          <font>
             <Font name=".VnAvant Bold" size="14.0" />
          </font>
       </Label>
+      <Label layoutX="14.0" layoutY="90.0" text="Calculator" textFill="#282e9f">
+         <font>
+            <Font name=".VnAvant Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="185.0" text="Solution" textFill="#282e9f">
+         <font>
+            <Font name=".VnAvant Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="215.0" prefHeight="19.0" prefWidth="53.0" text="X_1 =">
+         <font>
+            <Font name=".VnAvant Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="234.0" prefHeight="19.0" prefWidth="53.0" text="X_2 =">
+         <font>
+            <Font name=".VnAvant Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="152.0" layoutY="273.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="91.0" text="Result" textFill="#301f9f">
+         <font>
+            <Font name=".VnAvant Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
