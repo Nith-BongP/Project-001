@@ -15,7 +15,7 @@
             <Image url="@calculator-background.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="99.0" layoutY="28.0" text="Mini Project" textFill="WHITE">
+      <Label fx:id="Label_X1" layoutX="99.0" layoutY="28.0" text="Mini Project" textFill="WHITE">
          <font>
             <Font name=".VnBahamasB Bold" size="36.0" />
          </font>
@@ -44,7 +44,7 @@
             <Font name=".VnAvant Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="14.0" layoutY="90.0" text="Calculator" textFill="#282e9f">
+      <Label fx:id="Label_X2" layoutX="14.0" layoutY="90.0" text="Calculator" textFill="#282e9f">
          <font>
             <Font name=".VnAvant Bold" size="24.0" />
          </font>
