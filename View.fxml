@@ -15,7 +15,7 @@
             <Image url="@calculator-background.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="14.0" layoutY="28.0" text="Mini Project" textFill="WHITE">
+      <Label layoutX="99.0" layoutY="28.0" text="Mini Project" textFill="WHITE">
          <font>
             <Font name=".VnBahamasB Bold" size="36.0" />
          </font>
@@ -69,5 +69,10 @@
             <Font name=".VnAvant Bold" size="18.0" />
          </font>
       </Button>
+      <ImageView fitHeight="93.0" fitWidth="73.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo-GTRSC-png.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
