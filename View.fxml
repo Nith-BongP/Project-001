@@ -8,128 +8,80 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0"
-            xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Controller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
 
     <children>
 
-        <ImageView fitHeight="400.0" fitWidth="600.0"
-                   pickOnBounds="true"
-                   preserveRatio="false">
+        <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="false">
             <image>
                 <Image url="@calculator-background.jpg" />
             </image>
         </ImageView>
 
-        <ImageView fitHeight="93.0" fitWidth="73.0"
-                   layoutX="12.0"
-                   layoutY="12.0"
-                   pickOnBounds="true"
-                   preserveRatio="true">
+        <ImageView fitHeight="93.0" fitWidth="73.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@Logo-GTRSC-png.png" />
             </image>
         </ImageView>
 
-        <Label layoutX="100.0"
-               layoutY="20.0"
-               text="Mini Project"
-               textFill="WHITE">
+        <Label layoutX="100.0" layoutY="20.0" text="Mini Project" textFill="WHITE">
             <font>
-                <Font size="36.0"/>
+                <Font name=".VnBahamasB Bold" size="36.0" />
             </font>
         </Label>
 
-        <Label layoutX="14.0"
-               layoutY="90.0"
-               text="Calculator"
-               textFill="#282e9f">
+        <Label layoutX="14.0" layoutY="90.0" text="Calculator" textFill="#282e9f">
             <font>
-                <Font size="24.0"/>
+                <Font name=".VnAvant Bold" size="24.0" />
             </font>
         </Label>
 
-        <TextField fx:id="Input_A"
-                   layoutX="30.0"
-                   layoutY="140.0"
-                   prefWidth="50.0"
-                   alignment="CENTER"
-                   promptText="A"/>
+        <TextField fx:id="Input_A" alignment="CENTER" layoutX="27.0" layoutY="140.0" prefHeight="25.0" prefWidth="56.0" promptText="A" />
 
-        <Label layoutX="85.0"
-               layoutY="145.0"
-               text="X² +"/>
+        <Label layoutX="90.0" layoutY="145.0" text="X² +">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
 
-        <TextField fx:id="Input_B"
-                   layoutX="130.0"
-                   layoutY="140.0"
-                   prefWidth="50.0"
-                   alignment="CENTER"
-                   promptText="B"/>
+        <TextField fx:id="Input_B" alignment="CENTER" layoutX="124.0" layoutY="140.0" prefHeight="25.0" prefWidth="56.0" promptText="B" />
 
-        <Label layoutX="190.0"
-               layoutY="145.0"
-               text="X +"/>
+        <Label layoutX="190.0" layoutY="145.0" text="X +">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
 
-        <TextField fx:id="Input_C"
-                   layoutX="230.0"
-                   layoutY="140.0"
-                   prefWidth="50.0"
-                   alignment="CENTER"
-                   promptText="C"/>
+        <TextField fx:id="Input_C" alignment="CENTER" layoutX="224.0" layoutY="140.0" prefHeight="25.0" prefWidth="56.0" promptText="C" />
 
-        <Label layoutX="290.0"
-               layoutY="145.0"
-               text="= 0"/>
+        <Label layoutX="290.0" layoutY="145.0" text="= 0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
 
-        <Label layoutX="14.0"
-               layoutY="190.0"
-               text="Solution"
-               textFill="#282e9f">
+        <Label layoutX="14.0" layoutY="190.0" text="Solution" textFill="#282e9f">
             <font>
-                <Font size="24.0"/>
+                <Font name=".VnAvant Bold" size="24.0" />
             </font>
         </Label>
 
         <!-- RESULT LABELS -->
 
-        <Label fx:id="result_x1"
-               layoutX="30.0"
-               layoutY="240.0"
-               prefWidth="500.0"
-               prefHeight="30.0"
-               text="X1 = ..."
-               textFill="RED">
+        <Label fx:id="result_x1" layoutX="30.0" layoutY="240.0" prefHeight="30.0" prefWidth="500.0" text="X1 = ..." textFill="#1e00ff">
             <font>
-                <Font size="16.0"/>
+                <Font size="16.0" />
             </font>
         </Label>
 
-        <Label fx:id="result_x2"
-               layoutX="30.0"
-               layoutY="280.0"
-               prefWidth="500.0"
-               prefHeight="30.0"
-               text="X2 = ..."
-               textFill="RED">
+        <Label fx:id="result_x2" layoutX="30.0" layoutY="280.0" prefHeight="30.0" prefWidth="500.0" text="X2 = ..." textFill="#1c00ff">
             <font>
-                <Font size="16.0"/>
+                <Font size="16.0" />
             </font>
         </Label>
 
         <!-- BUTTON -->
 
-        <Button fx:id="Button_result"
-                layoutX="150.0"
-                layoutY="330.0"
-                prefWidth="100.0"
-                prefHeight="40.0"
-                text="Result"
-                onAction="#calculateResult">
+        <Button fx:id="Button_result" layoutX="150.0" layoutY="330.0" onAction="#calculateResult" prefHeight="40.0" prefWidth="100.0" text="Result">
             <font>
-                <Font size="18.0"/>
+                <Font size="18.0" />
             </font>
         </Button>
 
