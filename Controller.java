@@ -3,7 +3,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class Controller {
-    @FXML private Button Button_result;
+   
     @FXML private TextField Input_A;
     @FXML private TextField Input_B;
     @FXML private TextField Input_C;
