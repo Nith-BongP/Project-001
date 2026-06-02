@@ -20,15 +20,15 @@
             <Font name=".VnBahamasB Bold" size="36.0" />
          </font>
       </Label>
-      <TextField alignment="CENTER" layoutX="29.0" layoutY="137.0" prefHeight="31.0" prefWidth="53.0" promptText="A">
+      <TextField fx:id="Input_A" alignment="CENTER" layoutX="29.0" layoutY="137.0" prefHeight="31.0" prefWidth="53.0" promptText="A">
          <font>
             <Font size="14.0" />
          </font></TextField>
-      <TextField alignment="CENTER" layoutX="134.0" layoutY="137.0" prefHeight="31.0" prefWidth="53.0" promptText="B">
+      <TextField fx:id="Input_B" alignment="CENTER" layoutX="134.0" layoutY="137.0" prefHeight="31.0" prefWidth="53.0" promptText="B">
          <font>
             <Font size="14.0" />
          </font></TextField>
-      <TextField alignment="CENTER" layoutX="232.0" layoutY="137.0" prefHeight="31.0" prefWidth="53.0" promptText="C" />
+      <TextField fx:id="Input_C" alignment="CENTER" layoutX="232.0" layoutY="137.0" prefHeight="31.0" prefWidth="53.0" promptText="C" />
       <Label layoutX="85.0" layoutY="144.0" text="X^2  +">
          <font>
             <Font name=".VnAvant Bold" size="14.0" />
@@ -54,17 +54,17 @@
             <Font name=".VnAvant Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="144.0" layoutY="215.0" prefHeight="19.0" prefWidth="53.0" text="X_1 =">
+      <Label fx:id="result_x1" layoutX="144.0" layoutY="215.0" prefHeight="19.0" prefWidth="53.0" text="X_1 =">
          <font>
             <Font name=".VnAvant Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="144.0" layoutY="234.0" prefHeight="19.0" prefWidth="53.0" text="X_2 =">
+      <Label fx:id="result_x2" layoutX="144.0" layoutY="234.0" prefHeight="19.0" prefWidth="53.0" text="X_2 =">
          <font>
             <Font name=".VnAvant Bold" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="152.0" layoutY="273.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="91.0" text="Result" textFill="#301f9f">
+      <Button fx:id="Button_result" layoutX="152.0" layoutY="273.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="91.0" text="Result" textFill="#301f9f">
          <font>
             <Font name=".VnAvant Bold" size="18.0" />
          </font>
