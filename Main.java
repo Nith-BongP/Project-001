@@ -20,7 +20,6 @@ public class Main extends Application {
         stage.getIcons().add(new javafx.scene.image.Image(getClass().getResourceAsStream("Logo-GTRSC-png.png")));
         stage.show();
     }
-}
- {
+
     
 }
