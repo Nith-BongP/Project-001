@@ -5,24 +5,12 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class Controller {
-
-    @FXML
-    private Button Button_result;
-
-    @FXML
-    private TextField Input_A;
-
-    @FXML
-    private TextField Input_B;
-
-    @FXML
-    private TextField Input_C;
-
-    @FXML
-    private Label result_x1;
-
-    @FXML
-    private Label result_x2;
+    @FXML private Button Button_result;
+    @FXML private TextField Input_A;
+    @FXML private TextField Input_B;
+    @FXML private TextField Input_C;
+    @FXML private Label result_x1;
+    @FXML private Label result_x2;
 
     @FXML
     public void calculateResult(ActionEvent event) {
