@@ -3,12 +3,12 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class Controller {
-
+    @FXML private Button Button_result;
     @FXML private TextField Input_A;
     @FXML private TextField Input_B;
     @FXML private TextField Input_C;
-    @FXML private Label Label_X1;
-    @FXML private Label Label_X2;
+    @FXML private Label result_x1;
+    @FXML private Label result_x2;
 
     @FXML
     public void calculateResult() {
@@ -20,54 +20,58 @@ public class Controller {
             double c = Double.parseDouble(Input_C.getText());
 
             if (a == 0) {
-                Label_X1.setText("A cannot be 0");
-                Label_X2.setText("");
+                result_x1.setText("A cannot be 0");
+                result_x2.setText("");
                 return;
             }
-            double discriminant = b * b - 4 * a * c;
 
-            // Two real roots
-            if (discriminant > 0) {
+            double delta = b * b - 4 * a * c;
 
-                double x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-                double x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+            if (delta > 0) {
 
-                Label_X1.setText(String.format("%.4f", x1));
-                Label_X2.setText(String.format("%.4f", x2));
+                double x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                double x2 = (-b - Math.sqrt(delta)) / (2 * a);
 
+                result_x1.setText(
+                        String.format("X1 = %.4f", x1));
+
+                result_x2.setText(
+                        String.format("X2 = %.4f", x2));
             }
 
-            // One real root
-            else if (discriminant == 0) {
+            else if (delta == 0) {
 
-                double x1 = -b / (2 * a);
+                double x = -b / (2 * a);
 
-                Label_X1.setText(String.format("%.4f", x1));
-                Label_X2.setText("Same as X1");
+                result_x1.setText(
+                        String.format("X1 = %.4f", x));
 
+                result_x2.setText(
+                        String.format("X2 = %.4f", x));
             }
 
-            // Complex roots
             else {
 
-                double realPart = -b / (2 * a);
-                double imagPart = Math.sqrt(-discriminant) / (2 * a);
+                double real = -b / (2 * a);
+                double imag = Math.sqrt(-delta) / (2 * a);
 
-                Label_X1.setText(
-                    String.format("%.4f + %.4fi",
-                    realPart, imagPart)
-                );
+                result_x1.setText(
+                        String.format(
+                                "X1 = %.4f + %.4fi",
+                                real,
+                                imag));
 
-                Label_X2.setText(
-                    String.format("%.4f - %.4fi",
-                    realPart, imagPart)
-                );
+                result_x2.setText(
+                        String.format(
+                                "X2 = %.4f - %.4fi",
+                                real,
+                                imag));
             }
 
         } catch (NumberFormatException e) {
 
-            Label_X1.setText("Invalid input");
-            Label_X2.setText("Invalid input");
+            result_x1.setText("Invalid Input");
+            result_x2.setText("Invalid Input");
         }
     }
 }
