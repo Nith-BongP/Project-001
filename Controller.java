@@ -19,6 +19,11 @@ public class Controller {
             double b = Double.parseDouble(Input_B.getText());
             double c = Double.parseDouble(Input_C.getText());
 
+            if (a == 0) {
+                Label_X1.setText("A cannot be 0");
+                Label_X2.setText("");
+                return;
+            }
             double discriminant = b * b - 4 * a * c;
 
             // Two real roots
