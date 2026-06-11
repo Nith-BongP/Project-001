@@ -65,13 +65,13 @@
 
         <!-- RESULT LABELS -->
 
-        <Label fx:id="result_x1" layoutX="30.0" layoutY="240.0" prefHeight="30.0" prefWidth="500.0" text="X1 = ..." textFill="#1e00ff">
+        <Label fx:id="result_x1" layoutX="30.0" layoutY="240.0" prefHeight="30.0" prefWidth="500.0" text="X1 = ..." textFill="#2e1f9d">
             <font>
                 <Font size="16.0" />
             </font>
         </Label>
 
-        <Label fx:id="result_x2" layoutX="30.0" layoutY="280.0" prefHeight="30.0" prefWidth="500.0" text="X2 = ..." textFill="#1c00ff">
+        <Label fx:id="result_x2" layoutX="30.0" layoutY="280.0" prefHeight="30.0" prefWidth="500.0" text="X2 = ..." textFill="#2e1f9d">
             <font>
                 <Font size="16.0" />
             </font>
