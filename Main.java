@@ -9,7 +9,7 @@ public class Main extends Application {
         launch();
     }
 
-    @Override
+    @Override   
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("View.fxml"));
