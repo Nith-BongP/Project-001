@@ -5,7 +5,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class Controller {
+<<<<<<< Updated upstream
     @FXML private Button Button_result;
+=======
+    
+>>>>>>> Stashed changes
     @FXML private TextField Input_A;
     @FXML private TextField Input_B;
     @FXML private TextField Input_C;
